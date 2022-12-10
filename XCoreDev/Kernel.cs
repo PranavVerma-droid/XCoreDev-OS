@@ -87,7 +87,7 @@ namespace XCoreDev
             {
                 Console.WriteLine("");
                 Console.WriteLine("XCoreDev V1.0.0");
-                Console.WriteLine("P.S - This Name is Stupid! I came up w/ this at 3am! give me some slack pls xD");
+                Console.WriteLine("P.S - This Name is Stupid! I came up w/ this at 2am! give me some slack pls xD");
                 Console.WriteLine("");
 
             }
@@ -196,7 +196,13 @@ namespace XCoreDev
                 Console.BackgroundColor = ConsoleColor.Gray;
                 Console.WriteLine("");
             }
-
+            else if (input == "consolecolorred")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Console Color Changed to RED");
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.WriteLine("");
+            }
 
             else if (input == "clear")
             {
