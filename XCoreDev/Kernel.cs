@@ -27,7 +27,7 @@ namespace XCoreDev
 
             Console.WriteLine("Run 'Help' for help.");
             Console.WriteLine("There are some hidden easter eggs! See if you can find them!");
-            
+            Console.WriteLine("");
         }
 
         protected override void Run()
@@ -99,7 +99,7 @@ namespace XCoreDev
             }
             else if (input == "checksumdata") {
                 Console.WriteLine("");
-                Console.WriteLine("");
+                Console.WriteLine("SHA512 32dceb94ca6b2445ec39802d7bb962e2d389801609ffb6706925539380fcb9c9ed75b932daae734ea8d5189d34c956494f50648d3dc3e292392607360bb47f35");
                 Console.WriteLine("");
             }
 
