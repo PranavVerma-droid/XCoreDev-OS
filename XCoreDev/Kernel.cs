@@ -12,9 +12,10 @@ namespace XCoreDev
 
         protected override void BeforeRun()
         {
-            
-            
 
+
+             
+            //Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("");
             //Console.WriteLine("");
             
@@ -28,6 +29,7 @@ namespace XCoreDev
             Console.WriteLine("Run 'help' for help.");
             Console.WriteLine("There are some hidden easter eggs! See if you can find them!");
             Console.WriteLine("");
+
         }
 
         protected override void Run()
@@ -36,16 +38,17 @@ namespace XCoreDev
             
             string input = "";
 
-            Console.Write("XCoreDev>");
+            Console.Write("root$XCoreDev> ");
             input = Console.ReadLine();
             HandleThisCommand(input);
-            
+
 
 
             /*Console.Write("Input: ");
             var input = Console.ReadLine();
             Console.Write("Text typed: ");
             Console.WriteLine(input);*/
+            //Console.BackgroundColor = ConsoleColor.Yellow;
         }
 
 
@@ -62,6 +65,8 @@ namespace XCoreDev
                 Console.WriteLine("reboot -- reboots the system");
                 Console.WriteLine("checksumdata -- see the checksum data");
                 Console.WriteLine("boot -- boots into the OS");
+                Console.WriteLine("consolecolor[parameter] -- changes the console color");
+                Console.WriteLine("clear -- clears the console");
                 Console.WriteLine("");
                 //Console.WriteLine();
             }
@@ -85,8 +90,6 @@ namespace XCoreDev
             else if (input == "shutdown")
             {
                 Console.WriteLine("Shutting Down!");
-
-
                 Sys.Power.Shutdown();
             }
             else if (input == "reboot")
@@ -99,7 +102,20 @@ namespace XCoreDev
                 Console.WriteLine("Ayye! Stop Swearing!");
                 Console.WriteLine("");
             }
-            else if (input == "checksumdata") {
+            else if (input == "shit")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Ayye! Stop Swearing!");
+                Console.WriteLine("");
+            }
+            else if (input == "piss")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Ayye! Stop Swearing! NOT PISS PLS");
+                Console.WriteLine("");
+            }
+            else if (input == "checksumdata")
+            {
                 Console.WriteLine("");
                 Console.WriteLine("SHA512 32dceb94ca6b2445ec39802d7bb962e2d389801609ffb6706925539380fcb9c9ed75b932daae734ea8d5189d34c956494f50648d3dc3e292392607360bb47f35");
                 Console.WriteLine("");
@@ -108,8 +124,114 @@ namespace XCoreDev
             {
                 Console.WriteLine("");
                 Console.WriteLine("Booting into XCoreDev.....");
+                Console.WriteLine("Nah! i dont feel Like booting yet xD");
                 Console.WriteLine("");
             }
+
+
+            else if (input == "consolecolorgreen")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Console Color Changed to GREEN");
+                Console.BackgroundColor = ConsoleColor.Green;
+                Console.WriteLine("");
+            }
+            else if (input == "consolecolorwhite")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Console Color Changed to WHITE");
+                Console.BackgroundColor = ConsoleColor.White;
+                Console.WriteLine("");
+            }
+            else if (input == "consolecoloryellow")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Console Color Changed to YELLOW");
+                Console.BackgroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("");
+            }
+            else if (input == "consolecolorblack")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Console Color Changed to BLACK");
+                Console.BackgroundColor = ConsoleColor.Black;
+                Console.WriteLine("");
+            }
+            else if (input == "consolecolorcyan")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Console Color Changed to CYAN");
+                Console.BackgroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("");
+            }
+            else if (input == "consolecolorblue")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Console Color Changed to BLUE");
+                Console.BackgroundColor = ConsoleColor.Blue;
+                Console.WriteLine("");
+            }
+
+            else if (input == "consolecolordarkgreen")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Console Color Changed to DARKGREEN");
+                Console.BackgroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine("");
+            }
+            else if (input == "consolecolormagenta")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Console Color Changed to MAGENTA");
+                Console.BackgroundColor = ConsoleColor.Magenta;
+                Console.WriteLine("");
+            }
+            else if (input == "consolecolordarkyellow")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Console Color Changed to DARKYELLOW");
+                Console.BackgroundColor = ConsoleColor.DarkYellow;
+                Console.WriteLine("");
+            }
+            else if (input == "consolecolordarkmagenta")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Console Color Changed to DARKMAGENTA");
+                Console.BackgroundColor = ConsoleColor.DarkMagenta;
+                Console.WriteLine("");
+            }
+            else if (input == "consolecolordarkcyan")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Console Color Changed to DARKCYAN");
+                Console.BackgroundColor = ConsoleColor.DarkCyan;
+                Console.WriteLine("");
+            }
+            else if (input == "consolecolordarkblue")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Console Color Changed to DARKBLUE");
+                Console.BackgroundColor = ConsoleColor.DarkBlue;
+                Console.WriteLine("");
+            }
+            else if (input == "consolecolorgray")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Console Color Changed to GRAY");
+                Console.BackgroundColor = ConsoleColor.Gray;
+                Console.WriteLine("");
+            }
+            else if (input == "clear")
+            {
+                Console.Clear();
+
+            }
+            else if (input == "") {
+                Console.WriteLine("");
+                Console.WriteLine("No Command Entered.");
+                Console.WriteLine("");
+            }
+
 
 
             else
