@@ -21,7 +21,7 @@ namespace XCoreDev
             
             
             
-            Console.WriteLine("XCoreDev booted successfully. Made by PranavVerma-droid.");
+            Console.WriteLine("XCoreDevOS CLI booted successfully. Made by PranavVerma-droid.");
             Console.WriteLine("https://github.com/PranavVerma-droid");
             
             Console.WriteLine("");
@@ -69,6 +69,8 @@ namespace XCoreDev
                 Console.WriteLine("boot -- boots into the OS");
                 Console.WriteLine("consolecolor[parameter] -- changes the console color");
                 Console.WriteLine("clear -- clears the console");
+                Console.WriteLine("this is stupid -- idk what this does xD");
+                Console.WriteLine("beep -- Beeps the console");
                 Console.WriteLine("");
                 //Console.WriteLine();
             }
@@ -206,6 +208,18 @@ namespace XCoreDev
                 Console.WriteLine("No Command Entered.");
                 Console.Beep();
                 Console.WriteLine("");
+            }
+            else if (input == "this is stupid")
+            {
+                Console.WriteLine("ME ANGRY >:(");
+                Sys.Power.Shutdown();
+            }
+            else if (input == "beep")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Beeping the Console");
+                Console.WriteLine("");
+                Console.Beep();
             }
 
 
