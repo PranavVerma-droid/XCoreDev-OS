@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Reflection;
 using System.Text;
 using Sys = Cosmos.System;
@@ -11,11 +12,12 @@ namespace XCoreDev
 
         protected override void BeforeRun()
         {
-            int counter1;
-            counter1 = 0;
+            
+            
 
             Console.WriteLine("");
             //Console.WriteLine("");
+            
             
             
             Console.WriteLine("XCoreDev booted successfully. Made by PranavVerma-droid.");
@@ -25,25 +27,31 @@ namespace XCoreDev
 
             Console.WriteLine("Run 'Help' for help.");
             Console.WriteLine("There are some hidden easter eggs! See if you can find them!");
+            
         }
 
         protected override void Run()
         {
+            
+            
             string input = "";
 
+            Console.Write("XCoreDev>");
             input = Console.ReadLine();
             HandleThisCommand(input);
             
-            
-            
+
+
             /*Console.Write("Input: ");
             var input = Console.ReadLine();
             Console.Write("Text typed: ");
             Console.WriteLine(input);*/
         }
 
+
         private void HandleThisCommand(string input)
         {
+            //int counter1;
             if (input == "help")
             {
                 Console.WriteLine("");
@@ -52,7 +60,6 @@ namespace XCoreDev
                 Console.WriteLine("build -- shows the build number");
                 Console.WriteLine("shutdown -- shuts the system down");
                 Console.WriteLine("reboot -- reboots the system");
-                Console.WriteLine("info -- shows the build info");
                 Console.WriteLine("");
                 //Console.WriteLine();
             }
@@ -77,23 +84,49 @@ namespace XCoreDev
             {
                 Console.WriteLine("Shutting Down!");
 
-                //System.Threading.Thread.Sleep(5000);
+
                 Sys.Power.Shutdown();
             }
             else if (input == "reboot")
             {
                 Sys.Power.Reboot();
             }
-            else if (input == "fuck") {
+            else if (input == "fuck")
+            {
+                Console.WriteLine("");
                 Console.WriteLine("Ayye! Stop Swearing!");
-                
+                Console.WriteLine("");
             }
-
+            else if (input == "checksumdata") {
+                Console.WriteLine("");
+                Console.WriteLine("");
+                Console.WriteLine("");
+            }
 
             else
             {
+                Console.WriteLine("");
                 Console.WriteLine("Not a valid command.");
+                Console.WriteLine("");
             }
+
+
+            /*if (counter1 != 10)
+            {
+                Console.WriteLine("Ayye! Stop Swearing!");
+                counter1++;
+            }
+            else
+            {
+                Console.WriteLine("Ayye! Thats Enough!");
+                counter1 = 0;
+            }*/
+
+
+
+
+
+
         }
 
         
