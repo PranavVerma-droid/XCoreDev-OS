@@ -25,7 +25,7 @@ namespace XCoreDev
             
             Console.WriteLine("");
 
-            Console.WriteLine("Run 'Help' for help.");
+            Console.WriteLine("Run 'help' for help.");
             Console.WriteLine("There are some hidden easter eggs! See if you can find them!");
             Console.WriteLine("");
         }
