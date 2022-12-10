@@ -60,6 +60,8 @@ namespace XCoreDev
                 Console.WriteLine("build -- shows the build number");
                 Console.WriteLine("shutdown -- shuts the system down");
                 Console.WriteLine("reboot -- reboots the system");
+                Console.WriteLine("checksumdata -- see the checksum data");
+                Console.WriteLine("boot -- boots into the OS");
                 Console.WriteLine("");
                 //Console.WriteLine();
             }
@@ -102,6 +104,13 @@ namespace XCoreDev
                 Console.WriteLine("SHA512 32dceb94ca6b2445ec39802d7bb962e2d389801609ffb6706925539380fcb9c9ed75b932daae734ea8d5189d34c956494f50648d3dc3e292392607360bb47f35");
                 Console.WriteLine("");
             }
+            else if (input == "boot")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Booting into XCoreDev.....");
+                Console.WriteLine("");
+            }
+
 
             else
             {
