@@ -28,10 +28,11 @@ namespace XCoreDev
 
             Console.WriteLine("Run 'help' for help.");
             Console.WriteLine("There are some hidden easter eggs! See if you can find them!");
+            
             Console.WriteLine("");
 
         }
-
+        
         protected override void Run()
         {
             
@@ -41,7 +42,7 @@ namespace XCoreDev
             Console.Write("root$XCoreDev> ");
             input = Console.ReadLine();
             HandleThisCommand(input);
-
+            
 
 
             /*Console.Write("Input: ");
@@ -49,6 +50,7 @@ namespace XCoreDev
             Console.Write("Text typed: ");
             Console.WriteLine(input);*/
             //Console.BackgroundColor = ConsoleColor.Yellow;
+            //Sys.Network.IPv4.Address.
         }
 
 
@@ -114,6 +116,12 @@ namespace XCoreDev
                 Console.WriteLine("Ayye! Stop Swearing! NOT PISS PLS");
                 Console.WriteLine("");
             }
+            else if (input == "ass")
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Ayye! Stop Swearing! NOT PISS PLS");
+                Console.WriteLine("");
+            }
             else if (input == "checksumdata")
             {
                 Console.WriteLine("");
@@ -124,6 +132,7 @@ namespace XCoreDev
             {
                 Console.WriteLine("");
                 Console.WriteLine("Booting into XCoreDev.....");
+                Console.Beep();
                 Console.WriteLine("Nah! i dont feel Like booting yet xD");
                 Console.WriteLine("");
             }
@@ -171,47 +180,11 @@ namespace XCoreDev
                 Console.BackgroundColor = ConsoleColor.Blue;
                 Console.WriteLine("");
             }
-
-            else if (input == "consolecolordarkgreen")
-            {
-                Console.WriteLine("");
-                Console.WriteLine("Console Color Changed to DARKGREEN");
-                Console.BackgroundColor = ConsoleColor.DarkGreen;
-                Console.WriteLine("");
-            }
             else if (input == "consolecolormagenta")
             {
                 Console.WriteLine("");
                 Console.WriteLine("Console Color Changed to MAGENTA");
                 Console.BackgroundColor = ConsoleColor.Magenta;
-                Console.WriteLine("");
-            }
-            else if (input == "consolecolordarkyellow")
-            {
-                Console.WriteLine("");
-                Console.WriteLine("Console Color Changed to DARKYELLOW");
-                Console.BackgroundColor = ConsoleColor.DarkYellow;
-                Console.WriteLine("");
-            }
-            else if (input == "consolecolordarkmagenta")
-            {
-                Console.WriteLine("");
-                Console.WriteLine("Console Color Changed to DARKMAGENTA");
-                Console.BackgroundColor = ConsoleColor.DarkMagenta;
-                Console.WriteLine("");
-            }
-            else if (input == "consolecolordarkcyan")
-            {
-                Console.WriteLine("");
-                Console.WriteLine("Console Color Changed to DARKCYAN");
-                Console.BackgroundColor = ConsoleColor.DarkCyan;
-                Console.WriteLine("");
-            }
-            else if (input == "consolecolordarkblue")
-            {
-                Console.WriteLine("");
-                Console.WriteLine("Console Color Changed to DARKBLUE");
-                Console.BackgroundColor = ConsoleColor.DarkBlue;
                 Console.WriteLine("");
             }
             else if (input == "consolecolorgray")
@@ -221,6 +194,8 @@ namespace XCoreDev
                 Console.BackgroundColor = ConsoleColor.Gray;
                 Console.WriteLine("");
             }
+
+
             else if (input == "clear")
             {
                 Console.Clear();
@@ -229,6 +204,7 @@ namespace XCoreDev
             else if (input == "") {
                 Console.WriteLine("");
                 Console.WriteLine("No Command Entered.");
+                Console.Beep();
                 Console.WriteLine("");
             }
 
@@ -238,9 +214,10 @@ namespace XCoreDev
             {
                 Console.WriteLine("");
                 Console.WriteLine("Not a valid command.");
+                Console.Beep();
                 Console.WriteLine("");
             }
-
+            
 
             /*if (counter1 != 10)
             {
