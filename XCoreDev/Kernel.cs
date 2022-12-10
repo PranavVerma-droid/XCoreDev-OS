@@ -30,7 +30,7 @@ namespace XCoreDev
             string input = "";
 
             input = Console.ReadLine();
-            HandleCommand(input);
+            HandleThisCommand(input);
             
             
             
@@ -40,7 +40,7 @@ namespace XCoreDev
             Console.WriteLine(input);*/
         }
 
-        public static object HandleCommand(string input)
+        private void HandleThisCommand(string input)
         {
             if (input == "help")
             {
@@ -58,7 +58,8 @@ namespace XCoreDev
                 //Console.WriteLine($"{Sys.Global.}")
                 Console.WriteLine("Made by Pranav Verma");
             }
-            else if (input == "build") {
+            else if (input == "build")
+            {
                 Console.WriteLine("XCoreDev V1.0.0");
 
             }
@@ -75,9 +76,12 @@ namespace XCoreDev
             }
 
 
-            else {
+            else
+            {
                 Console.WriteLine("Not a valid command.");
             }
         }
+
+        
     }
 }
